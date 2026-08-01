@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --primary: #0a192f;
     --secondary: #64ffda;
@@ -9,160 +13,66 @@
     --transition: all 0.3s ease;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: var(--font-main);
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    line-height: 1.6;
-    overflow-x: hidden;
+    @apply font-sans bg-dark text-main transition duration-300;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
+    @apply text-inherit hover:text-secondary transition duration-300;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    @apply max-w-1100 mx-auto p-6;
 }
 
-/* Navigation */
 header {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.logo span {
-    color: var(--secondary);
+    @apply border-b border-gray-800 py-6 flex justify-between items-center;
 }
 
 nav ul {
-    display: flex;
-    gap: 2rem;
+    @apply flex gap-4;
 }
 
-nav a:hover {
-    color: var(--secondary);
+.logo {
+    @apply font-bold text-2xl;
 }
 
-/* Hero Section */
+.logo span {
+    @apply text-secondary;
+}
+
 .hero {
-    padding: 100px 0;
-    text-align: center;
+    @apply text-center py-16 mb-12;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.highlight {
-    color: var(--secondary);
+    @apply text-5xl font-bold mb-4;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
+    @apply text-xl text-muted mb-8;
 }
 
-/* Buttons */
 .btn {
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    background: var(--secondary);
-    color: var(--primary);
-    font-weight: bold;
-    transition: var(--transition);
+    @apply px-6 py-3 rounded-lg bg-secondary text-primary font-bold transition duration-300 hover:translate-y-[-2px] hover:shadow-lg;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.4);
-}
-
-/* Expertise/Stack Section */
-.expertise {
-    padding: 80px 0;
-    background: var(--bg-card);
-}
-
-.section-title {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+#skills, #projects {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12;
 }
 
 .card {
-    padding: 2rem;
-    border: 1px solid rgba(100, 255, 218, 0.2);
-    border-radius: 8px;
-    transition: var(--transition);
-}
-
-.card:hover {
-    border-color: var(--secondary);
+    @apply p-8 border rounded-lg transition duration-300 hover:border-secondary;
 }
 
 .card h3 {
-    margin-bottom: 1rem;
-    color: var(--secondary);
-}
-
-/* Project Cards */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    @apply text-secondary mb-4;
 }
 
 .tag {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    padding: 4px 12px;
-    background: rgba(100, 255, 218, 0.1);
-    color: var(--secondary);
-    border-radius: 20px;
+    @apply inline-block mt-4 px-4 py-2 bg-gray-900/20 text-secondary rounded-full;
 }
 
 footer {
-    padding: 40px 0;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--text-muted);
+    @apply py-16 text-center border-t border-gray-800 text-muted;
 }
