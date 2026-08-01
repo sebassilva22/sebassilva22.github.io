@@ -1,91 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silva Tech | Enterprise AI Engineering</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/favicon.svg">
+    <title>Juan Silva</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
-    <header>
-        <nav class="container">
-            <div class="logo">SILVA <span>TECH</span></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <h1>Empowering Enterprises with <span class="highlight">Scalable AI Solutions</span></h1>
-            <p>Expertise in Enterprise Architecture, Java/Spring Boot, and Artificial Intelligence.</p>
-            <a href="#projects" class="btn">View Case Studies</a>
-        </section>
-
-        <!-- Expertise Section (Integrated from stack.html) -->
-        <section id="expertise" class="expertise">
-            <div class="section-title">
-                <h2>Core Competencies</h2>
-                <p>Engineering excellence across multiple domains.</p>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <h3>AI & Machine Learning</h3>
-                    <p>LLMs, RAG Pipelines, and Agentic Workflows. Specialized in building production-ready AI
-                        agents for enterprise workflows.</p>
+<body class="bg-dark text-main transition duration-300 font-sans">
+    <div class="container">
+        <header>
+            <nav class="border-b border-gray-800 py-6 flex justify-between items-center">
+                <div class="logo font-bold text-2xl">
+                    Juan <span class="text-secondary">Silva</span>
                 </div>
-                <div class="card">
-                    <h3>Enterprise Architecture</h3>
-                    <p>Microservices, Distributed Systems, Cloud Native infrastructure, and high-availability system
-                        design.</p>
-                </div>
-                <div class="card">
-                    <h3>Backend Engineering</h3>
-                    <p>Java 25, Spring Boot ecosystem, and building robust APIs for complex business logic.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="section-title">
-                <h2>Selected Projects</h2>
-                <p>A showcase of technical depth and architectural complexity.</p>
-            </div>
-            <div class="project-grid">
-                <article class="project-card">
-                    <h3>Enterprise AI Integration</h3>
-                    <p>Implementation of a custom RAG system for corporate knowledge management using Vector
-                        Databases.</p>
-                    <span class="tag">Python, LangChain, Pinecone</span>
-                </article>
-                <article class="project-card">
-                    <h3>Scalable Microservices</h3>
-                    <p>Development of a high-concurrency backend system for financial transactions using Spring
-                        Boot.</p>
-                    <span class="tag">Java 21, Spring Boot, Kafka</span>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Silva Tech. Engineering Excellence in AI.</p>
-        </div>
+                <ul class="flex gap-4">
+                    <li><a href="index.html" class="text-inherit hover:text-secondary transition duration-300">Inicio</a></li>
+                    <li><a href="stack.html" class="text-inherit hover:text-secondary transition duration-300">Stack</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero text-center py-16 mb-12">
+                <h1 class="text-5xl font-bold mb-4">Desarrollador Full Stack</h1>
+                <p class="text-xl text-muted mb-8">Bienvenido a mi portafolio profesional. Aquí encontrarás información sobre mis habilidades y proyectos.</p>
+                <a href="#skills" class="btn px-6 py-3 rounded-lg bg-secondary text-primary font-bold transition duration-300 hover:translate-y-[-2px] hover:shadow-lg">Ver Habilidades</a>
+            </section>
+            <section id="skills" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Skills will be dynamically loaded here -->
+            </section>
+            <section id="projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Projects will be dynamically loaded here -->
+            </section>
+        </main>
+    </div>
+    <footer class="py-16 text-center border-t border-gray-800 text-muted">
+        <p>Contacto: <a href="mailto:juan.silva@example.com" class="text-inherit hover:text-secondary transition duration-300">juan.silva@example.com</a></p>
     </footer>
-
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/loadData.js"></script>
+    <script src="assets/js/skills-data.js"></script>
+    <script src="assets/js/projects-data.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
