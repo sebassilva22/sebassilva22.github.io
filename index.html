@@ -1,49 +1,52 @@
-<!doctype html>
-<html lang="es">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/favicon.svg">
-    <title>Juan Silva</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="bg-dark text-main transition duration-300 font-sans">
-    <div class="container">
-        <header>
-            <nav class="border-b border-gray-800 py-6 flex justify-between items-center">
-                <div class="logo font-bold text-2xl">
-                    Juan <span class="text-secondary">Silva</span>
-                </div>
-                <ul class="flex gap-4">
-                    <li><a href="index.html" class="text-inherit hover:text-secondary transition duration-300">Inicio</a></li>
-                    <li><a href="stack.html" class="text-inherit hover:text-secondary transition duration-300">Stack</a></li>
+<body>
+    <header>
+        <div class="container">
+            <h1>Juan</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <section class="hero text-center py-16 mb-12">
-                <h1 class="text-5xl font-bold mb-4">Desarrollador Full Stack</h1>
-                <p class="text-xl text-muted mb-8">Bienvenido a mi portafolio profesional. Aquí encontrarás información sobre mis habilidades y proyectos.</p>
-                <a href="#skills" class="btn px-6 py-3 rounded-lg bg-secondary text-primary font-bold transition duration-300 hover:translate-y-[-2px] hover:shadow-lg">Ver Habilidades</a>
-            </section>
-            <section id="skills">
-                <!-- Skills will be dynamically loaded here -->
-            </section>
-            <section id="projects">
-                <!-- Projects will be dynamically loaded here -->
-            </section>
-        </main>
-    </div>
-    <footer class="py-16 text-center border-t border-gray-800 text-muted">
-        <p>Contacto: <a href="mailto:juan.silva@example.com" class="text-inherit hover:text-secondary transition duration-300">juan.silva@example.com</a></p>
-    </footer>
-    <script src="assets/js/loadData.js"></script>
-    <script src="assets/js/skills-data.js"></script>
-    <script src="assets/js/projects-data.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+        </div>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Web Developer & Designer</h2>
+                <p>Creating beautiful, functional digital experiences</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Professional description content...</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <!-- Project content will go here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Juan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>

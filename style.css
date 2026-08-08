@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
     --primary: #0a192f;
     --secondary: #64ffda;
@@ -10,69 +6,199 @@
     --bg-dark: #0a192f;
     --bg-card: #112240;
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    @apply font-sans bg-dark text-main transition duration-300;
+    margin: 0;
+    background: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-main);
 }
 
 a {
-    @apply text-inherit hover:text-secondary transition duration-300;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary);
 }
 
 .container {
-    @apply max-w-1100 mx-auto p-6;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
 }
 
 header {
-    @apply border-b border-gray-800 py-6 flex justify-between items-center;
+    border-bottom: 1px solid rgba(136, 146, 176, 0.25);
+    padding: 24px 0;
 }
 
-nav ul {
-    @apply flex gap-4;
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-    @apply font-bold text-2xl;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 .logo span {
-    @apply text-secondary;
+    color: var(--secondary);
 }
 
 .hero {
-    @apply text-center py-16 mb-12;
+    text-align: center;
+    padding: 64px 0 40px;
 }
 
 .hero h1 {
-    @apply text-5xl font-bold mb-4;
+    margin: 0 0 16px;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 700;
 }
 
 .hero p {
-    @apply text-xl text-muted mb-8;
+    margin: 0 auto 28px;
+    max-width: 720px;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .btn {
-    @apply px-6 py-3 rounded-lg bg-secondary text-primary font-bold transition duration-300 hover:translate-y-[-2px] hover:shadow-lg;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#skills, #projects {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12;
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.2);
 }
 
-.card {
-    @apply p-8 border rounded-lg transition duration-300 hover:border-secondary;
+.btn.secondary {
+    background: transparent;
+    border: 1px solid rgba(100, 255, 218, 0.6);
+    color: var(--text-main);
 }
 
-.card h3 {
-    @apply text-secondary mb-4;
+.section-heading {
+    margin-bottom: 20px;
+}
+
+#skills,
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-bottom: 48px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: var(--secondary);
+}
+
+.card,
+.project-card {
+    background: rgba(17, 34, 64, 0.92);
+    border: 1px solid rgba(136, 146, 176, 0.2);
+    border-radius: 14px;
+    padding: 24px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover,
+.project-card:hover {
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.card h3,
+.project-card h3 {
+    margin-top: 0;
+    color: var(--secondary);
+}
+
+.card p,
+.project-card p {
+    color: var(--text-muted);
+    line-height: 1.7;
 }
 
 .tag {
-    @apply inline-block mt-4 px-4 py-2 bg-gray-900/20 text-secondary rounded-full;
+    display: inline-block;
+    margin: 6px 8px 0 0;
+    padding: 6px 10px;
+    background: rgba(100, 255, 218, 0.12);
+    color: var(--secondary);
+    border-radius: 999px;
+    font-size: 0.78rem;
+}
+
+.code {
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(10, 25, 47, 0.85);
+    color: #d7f8ef;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
 }
 
 footer {
-    @apply py-16 text-center border-t border-gray-800 text-muted;
+    padding: 48px 24px 64px;
+    text-align: center;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(136, 146, 176, 0.25);
+}
+
+@media (max-width: 700px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding-top: 48px;
+    }
 }
