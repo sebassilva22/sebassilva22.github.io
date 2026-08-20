@@ -41,7 +41,16 @@ Edit `src/data/projects.ts` and add a new entry with the required metadata. The 
 ## GitHub Pages
 
 The app is configured for static hosting and includes a `404.html` fallback for internal routes.
-If you deploy to a project repository, ensure GitHub Pages serves the built `dist/` folder.
+
+Deployment flow:
+
+`push` -> `GitHub Actions` -> `Vite build` -> `GitHub Pages`
+
+This repository is prepared as a user site for:
+
+`https://sebassilva22.github.io/`
+
+GitHub Pages serves the generated `dist/` folder after each successful workflow run.
 
 ## Data to complete
 
@@ -50,4 +59,3 @@ If you deploy to a project repository, ensure GitHub Pages serves the built `dis
 - Email
 - Resume link
 - Optional project URLs
-
