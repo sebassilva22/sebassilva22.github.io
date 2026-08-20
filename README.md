@@ -1,30 +1,53 @@
-# Juan Silva Portfolio
+# Juan Sebastian Silva Rojas Portfolio
 
-Este es el portafolio profesional de Juan Silva, desarrollador Full Stack con experiencia en Java 25, Spring Boot y Cloud. El sitio está diseñado utilizando Tailwind CSS para un diseño moderno y responsivo.
+Portfolio profesional bilingüe para mostrar perfil técnico, proyectos, laboratorios de arquitectura e iniciativas de IA.
 
-## Configuración
+## Stack
 
-1. Crea un repositorio llamado `tuusuario.github.io`.
-2. Sube el contenido de esta carpeta a la raíz del repositorio.
-3. En GitHub, activa **Settings > Pages > Deploy from a branch > main / root**.
+- React
+- TypeScript
+- Vite
 
-## Contenido Personalizable
+## Run locally
 
-- Reemplaza `assets/profile.jpeg` con tu propia foto de perfil manteniendo el mismo nombre.
-- Actualiza los datos en `assets/js/skills-data.js` y `assets/js/projects-data.js` para reflejar tus habilidades y proyectos.
+```bash
+npm install
+npm run dev
+```
 
-## Tecnologías Utilizadas
+## Build
 
-- **Frontend:** React, Tailwind CSS
-- **Backend:** Java 25, Spring Boot
-- **Base de Datos:** PostgreSQL
-- **Infraestructura en la Nube:** AWS (Lambda, API Gateway, DynamoDB)
-- **Desarrollo y Pruebas:** Docker, Jenkins
+```bash
+npm run build
+```
 
-## Contribuciones
+## Project structure
 
-Este proyecto sigue los estándares de Clean Code y Tailwind CSS. Cualquier contribución debe respetar estos principios.
+- `src/data/profile.ts`: datos personales que debes completar
+- `src/data/projects.ts`: proyectos destacados y laboratorio de IA
+- `src/data/experience.ts`: timeline profesional
+- `src/i18n/translations.ts`: textos EN / ES
+- `src/App.tsx`: estructura principal
 
-## Contacto
+## How translations work
 
-Para cualquier consulta o colaboración, puedes contactarme a través del formulario en el sitio web.
+The language is detected from the browser on first visit and persisted in `localStorage`.
+The selector toggles all visible UI text between English and Spanish.
+
+## Adding a project
+
+Edit `src/data/projects.ts` and add a new entry with the required metadata. The UI renders cards and project detail pages from that central file.
+
+## GitHub Pages
+
+The app is configured for static hosting and includes a `404.html` fallback for internal routes.
+If you deploy to a project repository, ensure GitHub Pages serves the built `dist/` folder.
+
+## Data to complete
+
+- GitHub username
+- LinkedIn URL
+- Email
+- Resume link
+- Optional project URLs
+

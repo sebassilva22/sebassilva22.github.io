@@ -1,16 +1,18 @@
-const projectsData = [
-    {
-        title: "Proyecto Académico 1",
-        description: "Descripción del proyecto académico 1.",
-        technologies: ["JAVA", "Spring Boot"],
-        link: "#"
-    },
-    {
-        title: "Proyecto Profesional 1",
-        description: "Descripción del proyecto profesional 1.",
-        technologies: ["React", "Node.js"],
-        link: "#"
-    }
+/* projects-data.js - Backend-oriented project examples for Senior Backend Engineer portfolio */
+export const projectsData = [
+  {
+    title: 'Microservices Architecture with Spring Boot',
+    tech: ['Java', 'Spring Boot', 'Spring Cloud', 'Docker', 'Kubernetes'],
+    link: '#'
+  },
+  {
+    title: 'Event-Driven System with Kafka',
+    tech: ['Apache Kafka', 'Spring Kafka', 'Java', 'Docker', 'AWS'],
+    link: '#'
+  },
+  {
+    title: 'Cloud-Native Application with AWS',
+    tech: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'Java', 'Spring Cloud'],
+    link: '#'
+  }
 ];
-
-export default projectsData;
