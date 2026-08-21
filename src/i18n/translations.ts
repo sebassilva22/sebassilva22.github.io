@@ -2,27 +2,31 @@ import type { Locale } from '../types';
 
 export const translations = {
   en: {
-    nav: { about: 'About', skills: 'Skills', projects: 'Projects', labs: 'Labs', experience: 'Experience', contact: 'Contact' },
-    hero: { role1: 'Senior Backend Engineer', role2: 'Software Architecture', role3: 'AI Engineering', cta1: 'View Projects', cta2: 'GitHub', cta3: 'LinkedIn', cta4: 'Download Resume' },
-    about: { title: 'About Me', body: 'Systems Engineer with 10+ years building software and designing enterprise solutions across backend, architecture, cloud and microservices. I focus on business-oriented systems and am actively exploring how generative AI and agentic workflows can improve products and development cycles.' },
-    profile: { title: 'Profile Highlights', education: 'Systems Engineering at UNAD', technologist: 'Analysis and Development Technologist at SENA', certification: 'C1 English certification (CEFR)', languages: 'Spanish native or bilingual, English full professional' },
-    skills: { title: 'Skills' },
-    projects: { title: 'Featured Projects', status: 'Status', category: 'Category' },
-    labs: { title: 'Labs', architecture: 'Architecture Lab', ai: 'AI Lab' },
-    experience: { title: 'Experience' },
-    contact: { title: 'Contact', cta: "Let's build something interesting." },
-    common: { comingSoon: 'Coming soon', research: 'Research', prototype: 'Prototype', inProgress: 'In Progress' }
+    nav: { work: 'Work', code: 'Code', architecture: 'Architecture', ai: 'AI', experience: 'Experience' },
+    hero: { available: 'AVAILABLE FOR NEW CHALLENGES', title: 'Building systems beyond the API.', copy: 'I design and build scalable software systems, cloud architectures and AI-powered solutions — with a bias for clear boundaries, durable decisions and useful software.', explore: 'Explore my work', github: 'GitHub', linkedin: 'LinkedIn', years: '10+ years building software', backend: 'Backend & architecture', focus: 'AI engineering' },
+    dashboard: { years: 'Years building software', core: 'Core expertise', cloud: 'Cloud architecture', current: 'Current focus', source: 'Open source' },
+    work: { kicker: 'SELECTED SYSTEMS', title: 'Featured Engineering Work', copy: 'A few systems and experiments where the interesting part is the thinking behind the implementation.', problem: 'Problem', architecture: 'Architecture', decisions: 'Engineering decisions', source: 'View source', explore: 'Explore project', openSource: 'Open Source & Experiments', live: 'Live from GitHub', repositories: 'Other repositories', viewAll: 'View all repositories', loading: 'Syncing public repositories…', fallback: 'Showing the local project index while GitHub is unavailable.' },
+    code: { kicker: 'CODE, NOT CLAIMS', title: 'Code Lab', copy: 'Short, real-world engineering examples. Enough to inspect the decisions, never enough to hide behind noise.', tabs: { backend: 'Backend', architecture: 'Architecture', ai: 'AI', cloud: 'Cloud', data: 'Data' }, engineeringExample: 'Engineering example', copyButton: 'Copy', copied: 'Copied', source: 'View repository', from: 'From project' },
+    architecture: { kicker: 'MAKE IT LEGIBLE', title: 'Architecture Lab', copy: 'Systems thinking made visible. Select a pattern to inspect its boundaries, decisions and trade-offs.', design: 'Design decision', tradeoffs: 'Trade-offs', technologies: 'Technologies' },
+    ai: { kicker: 'EXPERIMENTAL SURFACE', title: 'AI Lab', copy: 'A transparent view into current research and prototypes. No unfinished work presented as a product.', research: 'Research', prototype: 'Prototype', progress: 'In progress', demo: 'Working demo', coming: 'Coming soon' },
+    tech: { kicker: 'THE TOOLBOX', title: 'Technology, in context', copy: 'Tools matter when they solve a real constraint. Explore where each one connects to the work.', used: 'Used in' },
+    experience: { kicker: 'PROGRESSION, NOT A CV', title: 'Experience', copy: 'A decade moving from business systems to backend platforms, cloud architecture and applied AI.', present: 'Present' },
+    assistant: { label: "Ask Juan's Portfolio", placeholder: 'Ask about projects, architecture or code…', examples: ['Show Java projects', 'What architecture experience does Juan have?', 'Show Spring Boot code'], empty: 'Try a question above. Answers come from the portfolio data.', answerProjects: 'Here are the projects that connect to', answerArchitecture: 'Juan explores architecture through system boundaries, event-driven design, microservices and serverless patterns.', answerAi: 'AI work currently focuses on local LLMs, RAG, tool calling and safe agent workflows.', answerCode: 'The Code Lab contains short Java, Python, SQL and TypeScript engineering examples.' },
+    footer: { designed: 'Designed & engineered by', built: 'Built with React + TypeScript', email: 'Email' },
+    common: { open: 'Open', close: 'Close', menu: 'Menu', command: 'Command menu', noUrl: 'Coming soon' }
   },
   es: {
-    nav: { about: 'Sobre mí', skills: 'Skills', projects: 'Proyectos', labs: 'Labs', experience: 'Experiencia', contact: 'Contacto' },
-    hero: { role1: 'Ingeniero Backend Senior', role2: 'Arquitectura de Software', role3: 'Ingeniería IA', cta1: 'Ver Proyectos', cta2: 'GitHub', cta3: 'LinkedIn', cta4: 'Descargar CV' },
-    about: { title: 'Sobre mí', body: 'Ingeniero de Sistemas con más de 10 años desarrollando software y diseñando soluciones empresariales en backend, arquitectura, cloud y microservicios. Me enfoco en software orientado a negocio y actualmente exploro cómo la IA generativa y los agentes pueden mejorar productos y ciclos de desarrollo.' },
-    profile: { title: 'Perfil Resumido', education: 'Ingeniería de Sistemas en la UNAD', technologist: 'Tecnólogo en Análisis y Desarrollo de Sistemas en el SENA', certification: 'Certificación de inglés C1 (CEFR)', languages: 'Español nativo o bilingüe, Inglés profesional completo' },
-    skills: { title: 'Skills' },
-    projects: { title: 'Proyectos Destacados', status: 'Estado', category: 'Categoría' },
-    labs: { title: 'Labs', architecture: 'Laboratorio de Arquitectura', ai: 'Laboratorio de IA' },
-    experience: { title: 'Experiencia' },
-    contact: { title: 'Contacto', cta: 'Construyamos algo interesante.' },
-    common: { comingSoon: 'Próximamente', research: 'Investigación', prototype: 'Prototipo', inProgress: 'En progreso' }
+    nav: { work: 'Trabajo', code: 'Código', architecture: 'Arquitectura', ai: 'IA', experience: 'Experiencia' },
+    hero: { available: 'DISPONIBLE PARA NUEVOS RETOS', title: 'Sistemas que van más allá de la API.', copy: 'Diseño y construyo sistemas de software escalables, arquitecturas cloud y soluciones potenciadas por IA — con foco en límites claros, decisiones durables y software útil.', explore: 'Explorar mi trabajo', github: 'GitHub', linkedin: 'LinkedIn', years: '10+ años construyendo software', backend: 'Backend y arquitectura', focus: 'Ingeniería IA' },
+    dashboard: { years: 'Años construyendo software', core: 'Especialidad central', cloud: 'Arquitectura cloud', current: 'Foco actual', source: 'Código abierto' },
+    work: { kicker: 'SISTEMAS SELECCIONADOS', title: 'Ingeniería destacada', copy: 'Algunos sistemas y experimentos donde lo interesante está en el razonamiento detrás de la implementación.', problem: 'Problema', architecture: 'Arquitectura', decisions: 'Decisiones de ingeniería', source: 'Ver código', explore: 'Explorar proyecto', openSource: 'Código abierto y experimentos', live: 'Datos en vivo de GitHub', repositories: 'Otros repositorios', viewAll: 'Ver todos los repositorios', loading: 'Sincronizando repositorios públicos…', fallback: 'Mostrando el índice local mientras GitHub no está disponible.' },
+    code: { kicker: 'CÓDIGO, NO PROMESAS', title: 'Laboratorio de Código', copy: 'Ejemplos cortos de ingeniería real. Suficientes para inspeccionar decisiones, nunca para esconderse detrás del ruido.', tabs: { backend: 'Backend', architecture: 'Arquitectura', ai: 'IA', cloud: 'Cloud', data: 'Datos' }, engineeringExample: 'Ejemplo de ingeniería', copyButton: 'Copiar', copied: 'Copiado', source: 'Ver repositorio', from: 'Del proyecto' },
+    architecture: { kicker: 'HACERLO LEGIBLE', title: 'Laboratorio de Arquitectura', copy: 'Pensamiento sistémico hecho visible. Selecciona un patrón para inspeccionar sus límites, decisiones y trade-offs.', design: 'Decisión de diseño', tradeoffs: 'Trade-offs', technologies: 'Tecnologías' },
+    ai: { kicker: 'SUPERFICIE EXPERIMENTAL', title: 'Laboratorio de IA', copy: 'Una vista transparente de investigación y prototipos actuales. El trabajo incompleto no se presenta como producto.', research: 'Investigación', prototype: 'Prototipo', progress: 'En progreso', demo: 'Demo funcional', coming: 'Próximamente' },
+    tech: { kicker: 'LA CAJA DE HERRAMIENTAS', title: 'Tecnología, en contexto', copy: 'Las herramientas importan cuando resuelven una restricción real. Explora dónde conecta cada una con el trabajo.', used: 'Usado en' },
+    experience: { kicker: 'PROGRESIÓN, NO UN CV', title: 'Experiencia', copy: 'Una década pasando de sistemas de negocio a plataformas backend, arquitectura cloud e IA aplicada.', present: 'Actualidad' },
+    assistant: { label: 'Pregúntale al portfolio', placeholder: 'Pregunta por proyectos, arquitectura o código…', examples: ['Muéstrame proyectos Java', '¿Qué experiencia tiene Juan en arquitectura?', 'Muéstrame código Spring Boot'], empty: 'Prueba una pregunta arriba. Las respuestas usan los datos del portfolio.', answerProjects: 'Estos son los proyectos conectados con', answerArchitecture: 'Juan explora arquitectura mediante límites de sistema, diseño orientado a eventos, microservicios y patrones serverless.', answerAi: 'El trabajo de IA se enfoca en LLMs locales, RAG, tool calling y flujos seguros con agentes.', answerCode: 'El Code Lab contiene ejemplos cortos de ingeniería en Java, Python, SQL y TypeScript.' },
+    footer: { designed: 'Diseñado y construido por', built: 'Construido con React + TypeScript', email: 'Email' },
+    common: { open: 'Abrir', close: 'Cerrar', menu: 'Menú', command: 'Menú de comandos', noUrl: 'Próximamente' }
   }
 } satisfies Record<Locale, any>;

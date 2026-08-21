@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#080a0f"/>
+  <path d="M0 90H1200M0 180H1200M0 270H1200M0 360H1200M0 450H1200M0 540H1200M90 0V630M180 0V630M270 0V630M360 0V630M450 0V630M540 0V630M630 0V630M720 0V630M810 0V630M900 0V630M990 0V630M1080 0V630" stroke="#ffffff" stroke-opacity=".04"/>
+  <circle cx="930" cy="310" r="185" fill="none" stroke="#75d5c0" stroke-opacity=".22"/><circle cx="930" cy="310" r="108" fill="none" stroke="#75d5c0" stroke-opacity=".5" stroke-dasharray="5 8"/><circle cx="930" cy="310" r="42" fill="#101820" stroke="#75d5c0"/><text x="930" y="320" text-anchor="middle" fill="#75d5c0" font-family="monospace" font-size="28">JS</text>
+  <path d="M930 205V150M930 470V415M825 310H770M1090 310H1035" stroke="#75d5c0" stroke-opacity=".5"/><text x="70" y="100" fill="#75d5c0" font-family="monospace" font-size="17" letter-spacing="4">ENGINEERING PORTFOLIO / 2026</text><text x="70" y="270" fill="#eef1ec" font-family="Arial,sans-serif" font-weight="700" font-size="68">Juan Sebastian</text><text x="70" y="345" fill="#8e98a3" font-family="Arial,sans-serif" font-weight="700" font-size="68">Silva Rojas</text><text x="74" y="420" fill="#75d5c0" font-family="monospace" font-size="20">SENIOR BACKEND ENGINEER · SOFTWARE ARCHITECTURE · AI</text>
+</svg>
