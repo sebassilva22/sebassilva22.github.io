@@ -33,6 +33,7 @@ function cleanRoutePages() {
         const routeFile = resolve(outputDir, page.path, 'index.html');
         mkdirSync(dirname(routeFile), { recursive: true });
         writeFileSync(routeFile, html);
+        writeFileSync(resolve(outputDir, `${page.path}.html`), html);
       }
     }
   };
