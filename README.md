@@ -28,6 +28,7 @@ npm run build
 - `src/data/experience.ts`: timeline profesional
 - `src/i18n/translations.ts`: textos EN / ES
 - `src/App.tsx`: estructura principal
+- `src/App.tsx`: páginas públicas de Silva Tech Video Factory (`/video-factory`, `/terms`, `/privacy`); edita aquí el contenido del producto y las políticas
 
 ## How translations work
 
@@ -49,6 +50,14 @@ Deployment flow:
 This repository is prepared as a user site for:
 
 `https://sebassilva22.github.io/`
+
+Public product and policy pages:
+
+- `https://sebassilva22.github.io/video-factory`
+- `https://sebassilva22.github.io/privacy`
+- `https://sebassilva22.github.io/terms`
+
+The page content lives in `src/App.tsx`. Update the policy text there when the service or its data practices change. `vite.config.ts` reads `VITE_BASE_PATH`; the Pages workflow supplies the base path reported by GitHub Pages during deployment. Internal page links and canonical URLs use that configured path. The existing `public/404.html` fallback lets GitHub Pages serve direct visits to client-side routes.
 
 GitHub Pages serves the generated `dist/` folder after each successful workflow run.
 
