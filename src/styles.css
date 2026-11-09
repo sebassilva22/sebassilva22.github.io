@@ -49,3 +49,10 @@ a,button { color:inherit; } a { text-decoration:none; } button { border:0; font:
 .site-footer { grid-template-columns:1.2fr auto auto 1fr; }
 @media(max-width:950px) { .site-footer { grid-template-columns:1fr 1fr; }.built-with { justify-self:start; } }
 @media(max-width:650px) { .factory-project { align-items:flex-start; flex-direction:column; padding:19px; }.site-footer { grid-template-columns:1fr; gap:25px; }.footer-links,.footer-product-links { flex-wrap:wrap; }.built-with { justify-self:start; } }
+
+.freelance-focus h2 { max-width: 760px; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.15; }
+.capability-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 32px 0; }
+.capability-grid article { border-top: 1px solid #364052; padding-top: 20px; }
+.capability-grid h3 { font-size: 1.05rem; }
+.capability-grid p { color: #a9b4c9; line-height: 1.75; }
+@media (max-width: 760px) { .capability-grid { grid-template-columns: 1fr; gap: 16px; } }

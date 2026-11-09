@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain.example/sitemap.xml
+Sitemap: https://sebassilva22.github.io/sitemap.xml
+

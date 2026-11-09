@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://your-domain.example/</loc>
-  </url>
+  <url><loc>https://sebassilva22.github.io/</loc></url>
+  <url><loc>https://sebassilva22.github.io/projects/simpacta</loc></url>
+  <url><loc>https://sebassilva22.github.io/projects/aidtrack</loc></url>
+  <url><loc>https://sebassilva22.github.io/projects/local-ai-coding-agent</loc></url>
+  <url><loc>https://sebassilva22.github.io/projects/ai-software-assistant</loc></url>
+  <url><loc>https://sebassilva22.github.io/video-factory</loc></url>
+  <url><loc>https://sebassilva22.github.io/privacy</loc></url>
+  <url><loc>https://sebassilva22.github.io/terms</loc></url>
 </urlset>

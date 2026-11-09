@@ -10,11 +10,7 @@ function detectLocale(): Locale {
 }
 
 export function useLocale() {
-  const [locale, setLocale] = useState<Locale>('en');
-
-  useEffect(() => {
-    setLocale(detectLocale());
-  }, []);
+  const [locale, setLocale] = useState<Locale>(detectLocale);
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, locale);

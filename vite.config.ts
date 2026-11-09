@@ -4,6 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
 const routePages = [
+  { path: 'projects/simpacta', title: 'SIMPACTA | AI Sales Platform', description: 'Multi-tenant AI sales agent and backend engineering by Juan Sebastian Silva Rojas.' },
   { path: 'privacy', title: 'Privacy Policy | Silva Tech Video Factory', description: 'How Silva Tech Video Factory handles information when you use the service.' },
   { path: 'terms', title: 'Terms of Service | Silva Tech Video Factory', description: 'Terms governing the use of Silva Tech Video Factory.' },
   { path: 'video-factory', title: 'Silva Tech Video Factory | AI Video Workflow', description: 'Prepare AI-assisted short-form marketing videos, review them, and send them to your authorized TikTok account.' },
