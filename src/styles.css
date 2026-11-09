@@ -6,7 +6,7 @@ html { scroll-behavior:smooth; background:var(--bg); }
 body { margin:0; color:var(--text); background:var(--bg); background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px); background-size:80px 80px; }
 body::before { content:''; position:fixed; inset:0; pointer-events:none; background:radial-gradient(circle at 73% 8%,rgba(117,213,192,.07),transparent 25%),radial-gradient(circle at 15% 46%,rgba(214,165,110,.035),transparent 20%); z-index:-1; }
 a,button { color:inherit; } a { text-decoration:none; } button { border:0; font:inherit; cursor:pointer; } :focus-visible { outline:2px solid var(--mint); outline-offset:4px; }
-.app-shell { min-height:100vh; overflow:hidden; } .section-frame { width:min(1180px,calc(100% - 64px)); margin:0 auto; } .section-block { padding:130px 0 0; }
+.app-shell { min-height:100vh; overflow-x:clip; } .section-frame { width:min(1180px,calc(100% - 64px)); margin:0 auto; } .section-block { padding:130px 0 0; }
 .site-header { position:sticky; top:0; z-index:20; width:min(100%,1440px); margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:2rem; padding:20px max(32px,calc((100% - 1180px)/2)); background:rgba(8,10,15,.82); border-bottom:1px solid rgba(255,255,255,.08); backdrop-filter:blur(18px); }
 .monogram { display:inline-flex; align-items:flex-end; font:500 1.2rem var(--mono); letter-spacing:-.08em; white-space:nowrap; } .monogram i { color:var(--mint); font-style:normal; } .site-nav { display:flex; gap:25px; margin-left:auto; color:var(--muted); font-size:.77rem; } .site-nav a,.footer-links a { transition:color .2s ease; } .site-nav a:hover,.footer-links a:hover,.text-link:hover { color:var(--mint); }
 .header-actions { display:flex; align-items:center; gap:15px; margin-left:20px; color:var(--muted); font:500 .7rem var(--mono); } .header-github { color:var(--text); } .header-github span { color:var(--mint); } .locale-switch { background:none; color:var(--muted); font:500 .67rem var(--mono); } .locale-switch span { color:var(--faint); margin:0 4px; }
@@ -56,3 +56,6 @@ a,button { color:inherit; } a { text-decoration:none; } button { border:0; font:
 .capability-grid h3 { font-size: 1.05rem; }
 .capability-grid p { color: #a9b4c9; line-height: 1.75; }
 @media (max-width: 760px) { .capability-grid { grid-template-columns: 1fr; gap: 16px; } }
+
+/* Keep anchor destinations clear of the sticky navigation. */
+html { scroll-padding-top: 96px; }
