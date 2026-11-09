@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sebassilva22.github.io/sitemap.xml
-
